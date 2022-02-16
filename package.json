@@ -2,9 +2,11 @@
   "name": "node-typescript-api",
   "version": "1.0.0",
   "description": "Build an App with Node.js, Express, and TypeScript",
-  "main": "index.js",
+  "main": "serve.js",
   "scripts": {
-    "serve": "nodemon server.ts"
+    "serve": "nodemon server.ts",
+    "start": "npm run build && cross-env NODE_ENV=production node server.js",
+    "build": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +17,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.17.2"
   }
 }
