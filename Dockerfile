@@ -15,6 +15,6 @@ RUN ls -a
 RUN npm install
 RUN npm run build
 
-EXPOSE 8081
+EXPOSE 3000
 
 CMD [ "node", "./dist/src/server.js" ]
