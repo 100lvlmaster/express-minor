@@ -1,7 +1,7 @@
 import express, { Response } from "express";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 8081;
 
 const testFun = (req, res: Response) => {
   res.status(200).json({ message: "server is running now" });
