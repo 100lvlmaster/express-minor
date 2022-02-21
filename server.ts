@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 8081;
 
 const testFun = (req, res: Response) => {
-  res.status(200).json({ message: "server is running" });
+  res.status(200).json({ message: "server is running now" });
 };
 app.listen(port, () => {
   console.log(`Timezones by location application is running on port ${port}.`);
