@@ -8,7 +8,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 COPY tsconfig.json ./
 COPY . .
-# copy source code to /app/src folder
 
 # check files list
 RUN ls -a
